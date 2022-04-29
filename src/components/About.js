@@ -19,7 +19,7 @@ export const About = (props) => {
                         <i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, placeat sint error debitis sunt aliquid! Dignissimos eaque veniam earum debitis commodi optio excepturi quia voluptas totam? Dignissimos tenetur eligendi ullam.</i>
                         <br />
                     </div>
-                    <img src={props.image}></img>
+                    <img alt="" src={props.image}></img>
                 </div>
             </Wrapper>
         </Container>

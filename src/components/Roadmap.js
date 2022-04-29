@@ -14,7 +14,7 @@ export const Roadmap = (props) => {
             </div>
 
             <div className="roadmap-background">
-                <img src={props.bg} />
+                <img alt="" src={props.bg} />
             </div>
 
             <Wrapper>

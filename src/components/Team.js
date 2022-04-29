@@ -12,7 +12,7 @@ export const Team = (props) => {
             </div>
 
             <div className="team-background">
-                <img src={props.bg} />
+                <img alt="" src={props.bg} />
             </div>
 
             <Wrapper>

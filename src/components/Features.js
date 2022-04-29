@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Container, Wrapper } from '../styles/StyledFeatures'
 
 export const Features = (props) => {
@@ -7,7 +7,7 @@ export const Features = (props) => {
         <Container id="features">
             <Wrapper>
                 <div className="content">
-                    <img src={props.image}></img>
+                    <img alt="" src={props.image}></img>
                     <div className="text">
                         <h2 className="test">Features</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati, placeat sint error debitis sunt aliquid! Dignissimos eaque veniam earum debitis commodi optio excepturi quia voluptas totam? Dignissimos tenetur eligendi ullam.</p>

@@ -22,7 +22,7 @@ export const TeamCard = (props) => {
     return (
         <Container ref={ref}>
             <div className="profile-picture">
-                <img src={props.image}></img>
+                <img alt={props.name} src={props.image}></img>
                 <a href={props.url}>
                     <div className="social-media">
                         <FontAwesomeIcon icon={brands('twitter')} />

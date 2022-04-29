@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Container, Wrapper, MobileMenuButton, MobileMenu, ScrollTopButton } from '../styles/StyledNavbar'
+import { Container, Wrapper, MobileMenuButton, MobileMenu } from '../styles/StyledNavbar'
 
 export const Navbar = (props) => {
 
@@ -11,7 +11,7 @@ export const Navbar = (props) => {
                 <div className="left">
                     <ul style={{ justifyContent: "flex-end" }}>
                         {props.data ? props.data.map((item, index) => {
-                            if (item.position !== "left") return;
+                            if (item.position !== "left") return "";
 
                             return (<a key={index} href={item.url}><li>{item.title}</li></a>)
                         }) : ""}
@@ -32,7 +32,7 @@ export const Navbar = (props) => {
                 <div className="right">
                     <ul>
                         {props.data ? props.data.map((item, index) => {
-                            if (item.position !== "right") return;
+                            if (item.position !== "right") return "";
 
                             return (<a key={index} href={item.url}><li>{item.title}</li></a>)
                         }) : ""}
@@ -46,7 +46,7 @@ export const Navbar = (props) => {
                 <MobileMenu show={showMobileMenu}>
                     <ul>
                         {props.data ? props.data.map((item, index) => {
-                            if (item.position === "bottom") return;
+                            if (item.position === "bottom") return "";
 
                             return (<a onClick={() => setShowMobileMenu(false)} key={index} href={item.url}><li>{item.title}</li></a>)
                         }) : ""}

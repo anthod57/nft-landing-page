@@ -18,7 +18,7 @@ export const Footer = (props) => {
                 <div className="footer-menu">
                     <ul>
                         {props.data?.menu ? props.data.menu.map((item, index) => {
-                            if (item.position !== "bottom") return;
+                            if (item.position !== "bottom") return "";
                             return (<a href={item.url} key={index}><li>{item.title}</li></a>)
                         }) : ""}
                     </ul>
