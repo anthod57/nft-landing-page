@@ -115,6 +115,20 @@ export const Wrapper = styled.div`
             font-size: 1.5em;
         }
     }
+
+    @media only screen and (max-height: 700px){
+        h1 {
+            font-size: 1.5em;
+        }
+
+        h2 {
+            font-size: 1em;
+        }
+
+        a{
+            margin: 1em;
+        }
+    }
 `
 
 export const NFTSPreview = styled.div`
@@ -130,6 +144,11 @@ export const NFTSPreview = styled.div`
     @media only screen and (max-width: 380px){
         margin-top: 5em;
     }
+
+    @media only screen and (max-height: 600px){
+        display: none;
+    }
+    
 `
 
 export const NFTCard = styled.div`
@@ -138,6 +157,14 @@ export const NFTCard = styled.div`
     cursor: url('images/pointer.png'), pointer;
     max-width: 25%;
     aspect-ratio: 3/4;
+
+    @media only screen and (max-height: 1020px){
+        max-height: 25%;
+    }
+
+    @media only screen and (max-height: 700px){
+        max-height: 20%;
+    }
 
     :nth-child(1){ 
         transform: translate(-100%, 15%) rotateZ(-20deg) scale(0.95);
